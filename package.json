@@ -1,0 +1,23 @@
+{
+	"name": "mocha-ts-tests",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc",
+		"test": "mocha --require ts-node/register --watch-extensions ts test/**/*.spec.ts",
+		"test:min": "npm run test -- --reporter min",
+		"test:watch": "npm run test -- --watch",
+		"test:min:watch": "npm run test:min -- --watch"
+	},
+	"author": "Benoit Masson",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/chai": "^4.1.2",
+		"@types/mocha": "^5.1.0",
+		"chai": "^3.5.0",
+		"mocha": "^3.2.0",
+		"ts-node": "^6.0.0",
+		"typescript": "^2.8.1"
+	}
+}
