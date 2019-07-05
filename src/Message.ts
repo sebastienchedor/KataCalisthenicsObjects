@@ -4,7 +4,11 @@ export class Message {
     this.content = content.join(" ");
   }
 
-  toString(): string {
+  public toString(): string {
     return this.content;
+  }
+
+  public append(message: Message) {
+    return this;
   }
 }

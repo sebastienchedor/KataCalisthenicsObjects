@@ -10,6 +10,6 @@ describe("New message", () => {
   });
   it("should append message", () => {
     const message = new Message("10", "EUR");
-    expect(message.append("OS").toString()).to.equal("10 EUROS");
+    expect(message.append(new Message("OS")).toString()).to.equal("10 EUROS");
   });
 });

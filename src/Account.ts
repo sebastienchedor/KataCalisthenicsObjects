@@ -19,12 +19,7 @@ export class Account {
   public printHistory(): Message {
     return new Message("2000-01-01  : deposit ")
       .append(this.amount.print())
-      .append(": ");
+      .append(new Message(": "))
       .append(this.amount.print());
   }
 }
-
-//enum OperationTag {
-//  deposit = "deposit",
-//  withdraw = "withdraw"
-//}

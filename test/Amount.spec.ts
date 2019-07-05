@@ -1,5 +1,4 @@
 import { Amount } from "../src/Amount";
-import { Message } from "../src/Message";
 
 import { expect } from "chai";
 import "mocha";
